@@ -48,7 +48,6 @@ export default {
   <Teleport to="body">
     <div class="cartItems" :style="{ display: cartVisible ? 'block' : 'none' }">
       <h3 class="col numOfItems">
-        {{ numOfItemsInCart }}
         {{ $t('cart.items', numOfItemsInCart) }}
       </h3>
       <h3 class="col">
